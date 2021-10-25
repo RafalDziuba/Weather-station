@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather station</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/fff128d8fd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <div class="clock-side">
+        <div class="date-container">
+          <h1 class="cityInfo">City</h1>
+          <div class="hour-container">
+            <p></p>
+            <p id="hour">Timezone</p>
+          </div>
+          <div class="min-container"><p id="min">Curren time</p></div>
+        </div>
+      </div>
+      <div class="weather-side">
+        <div class="main-info">
+          <div class="weather-img">
+            <img
+              src="/images/unknown.png"
+              alt="Weather condition"
+              class="weather-img-content"
+            />
+          </div>
+          <div class="temp">
+            <p>Temperature: <span id="temp">00</span></p>
+          </div>
+          <div class="weather">Humidity: <span id="hum">0%</span></div>
+        </div>
+        <div class="weather-input-fields">
+          <input type="text" placeholder="Enter city" />
+          <button>Search</button>
+          <p class="warning"></p>
+        </div>
+      </div>
+      <div class="quotes">
+        <div class="quote">
+          <p class="quote-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            veniam aperiam iste assumenda rerum adipisci excepturi beatae
+            deserunt maxime
+          </p>
+        </div>
+        <div class="author"><p class="author-content">Author</p></div>
+      </div>
+      <div class="quote-button">
+        <button class="get-quote">Show quote</button>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/scripts/weather.js"></script>
+    <script src="/scripts/clock.js"></script>
+    <script src="/scripts/quotes.js"></script>
+  </body>
+</html>
